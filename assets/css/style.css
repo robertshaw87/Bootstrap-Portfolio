@@ -31,6 +31,10 @@ footer {
     width:200px;
 }
 
+.carousel-inner a img, .carousel-inner a img {
+    margin: auto;
+  }
+
 @media screen and (max-width:640px) {
     /* Unstick the footer at smallest resolution */
     footer{

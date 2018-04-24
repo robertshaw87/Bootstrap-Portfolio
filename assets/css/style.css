@@ -1,19 +1,29 @@
-.footer {
-    position: absolute;
+footer {
+    position: sticky;
     bottom: 0;
     width: 100%;
     height: 50px;
     line-height: 50px;
     background-color: #f5f5f5;
-    text-align: center;
+}
+
+html {
+    min-height: 100%;
 }
 
 /* add background to webpage */
 body {
-    background-color:#ddd;
+    position:relative;
     background-image: url("../images/background.png");
     background-repeat: repeat;
 }
+
+/* main {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+} */
 
 .bg-myblue {
     background-color: #68b;

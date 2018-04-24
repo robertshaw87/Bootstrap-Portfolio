@@ -31,26 +31,29 @@ footer {
     width:250px;
 }
 
+/* in portfolio, set size of carousel images */
 .carousel-item .a .img-fluid {
     max-width: 100%;
     height: 700px;
   }
 
+/* center images in carousel */
 .carousel-inner a img, .carousel-inner a img {
     margin: auto;
   }
 
+/* make caption slightly see through for visual appeal */
 .carousel-caption {
     opacity: .9;
 }
 
+/* change image sizes at resolution breakpoints */
 @media screen and (max-width:992px){
     #portrait {
         width:300px;
     }
 
     .carousel-item .a .img-fluid {
-        max-width: 100%;
         height: 600px;
       }
 }
@@ -61,7 +64,6 @@ footer {
     }
 
     .carousel-item .a .img-fluid {
-        max-width: 100%;
         height: 500px;
       }
 }
@@ -72,16 +74,16 @@ footer {
         position:relative;
     }
 
-    /* Make portrait large at smallest resolution */
+    /* Make portrait take up an entire row at smallest resolution */
     #portrait {
         width:100%;
     }
 
     .carousel-item .a .img-fluid {
-        max-width: 100%;
         height: 400px;
       }
 
+    /* resize default caption bar in carousel so it doesnt clip at the smallest resolution */
     .carousel-caption {
         left:0px;
         right:0px;

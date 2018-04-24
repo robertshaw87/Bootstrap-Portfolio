@@ -13,66 +13,87 @@
 </head>
 
 <body class="bg-light">
+    <!-- Navbar (imported from bootstrap and modified) -->
     <header class="bg-light">
+        <!-- wraps elements in a container to align with the main content -->
         <div class="container pl-0 pr-0">
             <nav class="navbar navbar-expand-sm navbar-light bg-light p-0">
-                <a class="navbar-brand bg-myblue text-light pr-4 pl-4" href="#"><h1>Robert Shaw</h1></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- This is the branding, in this case, my name -->
+                <a class="navbar-brand bg-myblue text-light pr-4 pl-4" href="#">
+                    <h1>Robert Shaw</h1>
+                </a>
+
+                <!-- This is the button that shows up with the navbar collapses at the smallest resolution -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
+                <!-- This is the links that will collapse into the drop down menu at the smallest resolution -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-
-    <main class="container mt-5">
+    <!-- wrap the main content in a container for easy resizing -->
+    <main class="container mt-5 mb-3">
         <div class="row p-0">
             <div class="col pl-0 pr-0">
+                <!-- put all the content in a card -->
                 <div class="card bg-light mb-3">
+                    <!-- Title of the webpage -->
                     <div class="card-header bg-myblue">
                         <h2 class="text-light">About me</h2>
                     </div>
+                    <!-- Main content of the webpage -->
                     <div class="card-body">
-                            <div class="card bg-light m-1 mr-3 float-left" id="portrait">
-                                <img class="img-fluid" src="assets/images/robertshaw.jpg" alt="Robert Shaw">
-                            </div>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis gravida lorem. Sed a vestibulum libero.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis pellentesque eros, nec condimentum
-                            dui tristique in. Proin quam ex, malesuada vel quam vitae, accumsan sodales sem. Fusce pulvinar nisi
-                            auctor, dictum magna id, varius tortor. Pellentesque eleifend tortor non tincidunt faucibus. Fusce lacinia
-                            est non semper ultrices. Sed posuere aliquam mauris blandit consequat. Phasellus tristique sem purus,
-                            et suscipit ante scelerisque non. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                            per inceptos himenaeos. Sed quis purus id lectus accumsan luctus ac eu quam. Quisque ante ex, egestas
-                            vitae sapien et, dapibus consectetur mi. Donec non tellus finibus, dictum ante quis, commodo diam. <br><br>Morbi
-                            posuere neque massa, ut tincidunt lectus cursus sit amet. Aliquam mollis sodales quam sit amet sodales.
-                            Quisque semper tincidunt egestas. Praesent molestie pharetra blandit. Maecenas pulvinar finibus feugiat.
-                            Morbi ut lectus pulvinar, commodo lacus nec, commodo tellus. Phasellus tristique sem purus, et suscipit
-                            ante scelerisque non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                            himenaeos. Nullam sit amet velit a purus mollis maximus vitae eget ante. Quisque at odio ac odio volutpat
-                            efficitur id vitae quam. Ut sed massa lorem. <br><br>Sed quis purus id lectus accumsan luctus ac eu quam. Quisque
-                            ante ex, egestas vitae sapien et, dapibus consectetur mi. Donec non tellus finibus, dictum ante quis,
-                            commodo diam. Nullam sit amet velit a purus mollis maximus vitae eget ante. Quisque at odio ac odio volutpat
-                            efficitur id vitae quam. Ut sed massa lorem.</p>
+                        <!-- Portrait of self -->
+                        <div class="card bg-light m-1 mr-3 float-left" id="portrait">
+                            <img class="img-fluid" src="assets/images/robertshaw.jpg" alt="Robert Shaw">
+                        </div>
+                        <!-- Main text -->
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis gravida lorem. Sed a vestibulum
+                            libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis pellentesque
+                            eros, nec condimentum dui tristique in. Proin quam ex, malesuada vel quam vitae, accumsan sodales
+                            sem. Fusce pulvinar nisi auctor, dictum magna id, varius tortor. Pellentesque eleifend tortor
+                            non tincidunt faucibus. Fusce lacinia est non semper ultrices. Sed posuere aliquam mauris blandit
+                            consequat. Phasellus tristique sem purus, et suscipit ante scelerisque non. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed quis purus id lectus
+                            accumsan luctus ac eu quam. Quisque ante ex, egestas vitae sapien et, dapibus consectetur mi.
+                            Donec non tellus finibus, dictum ante quis, commodo diam.
+                            <br>
+                            <br>Morbi posuere neque massa, ut tincidunt lectus cursus sit amet. Aliquam mollis sodales quam sit
+                            amet sodales. Quisque semper tincidunt egestas. Praesent molestie pharetra blandit. Maecenas
+                            pulvinar finibus feugiat. Morbi ut lectus pulvinar, commodo lacus nec, commodo tellus. Phasellus
+                            tristique sem purus, et suscipit ante scelerisque non. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos. Nullam sit amet velit a purus mollis maximus
+                            vitae eget ante. Quisque at odio ac odio volutpat efficitur id vitae quam. Ut sed massa lorem.
+                            <br>
+                            <br>Sed quis purus id lectus accumsan luctus ac eu quam. Quisque ante ex, egestas vitae sapien et,
+                            dapibus consectetur mi. Donec non tellus finibus, dictum ante quis, commodo diam. Nullam sit
+                            amet velit a purus mollis maximus vitae eget ante. Quisque at odio ac odio volutpat efficitur
+                            id vitae quam. Ut sed massa lorem.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- This is the footer -->
     <footer class="footer navbar-fixed-bottom">
         <div class="container">
             <div class="row">
@@ -88,9 +109,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

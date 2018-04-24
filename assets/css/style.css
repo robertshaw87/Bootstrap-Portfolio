@@ -1,3 +1,11 @@
+/* add background image to webpage */
+body {
+    position:relative;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+}
+
+/* setup sticky footer */
 footer {
     position: sticky;
     bottom: 0;
@@ -7,37 +15,30 @@ footer {
     background-color: #f5f5f5;
 }
 
-html {
-    min-height: 100%;
-}
-
-/* add background to webpage */
-body {
-    position:relative;
-    background-image: url("../images/background.png");
-    background-repeat: repeat;
-}
-
-/* main {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
-} */
-
+/* sets border and background to my preferred shade of blue */
 .bg-myblue {
     background-color: #68b;
     border-color: #57a;
 }
 
-.bg-header {
-    background-color: #eee;
-}
-
+/* set text color to my preferred shade of blue */
 .text-myblue {
     color: #68b;
 }
 
+/* set size of portrait in index */
 #portrait {
     width:200px;
+}
+
+@media screen and (max-width:640px) {
+    /* Unstick the footer at smallest resolution */
+    footer{
+        position:relative;
+    }
+
+    /* Make portrait large at smallest resolution */
+    #portrait {
+        width:100%;
+    }
 }

@@ -38,6 +38,6 @@ body {
     color: #68b;
 }
 
-.navbar {
-    padding: 0;
+#portrait {
+    width:200px;
 }

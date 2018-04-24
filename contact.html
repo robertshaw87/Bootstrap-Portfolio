@@ -1,68 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Robert Shaw</title>
+    <title>Robert Shaw - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>    
+
 </head>
 
 <body class="bg-light">
-    <nav class="navbar m-0 navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand bg-myblue text-light" id="name-tag" href="index.html"><h1 class="p-1 pl-4 pr-4">Robert Shaw</h1></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mt-4" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navbar (imported from bootstrap and modified) -->
+    <header class="bg-light">
+        <!-- wraps elements in a container to align with the main content -->
+        <div class="container pl-0 pr-0">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light p-0">
+                <!-- This is the branding, in this case, my name -->
+                <a class="navbar-brand bg-myblue text-light pr-4 pl-4" href="#">
+                    <h1>Robert Shaw</h1>
+                </a>
+
+                <!-- This is the button that shows up with the navbar collapses at the smallest resolution -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- This is the links that will collapse into the drop down menu at the smallest resolution -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
-        
-    <main role="main" class="container mt-5">
-        <div class="card bg-light mb-3">
-            <div class="card-header bg-myblue"><h2 class="text-light">Contact me</h2></div>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <label for="contactName" class="card-text">Name</label>
-                        <input type="text" class="form-control" id="contactName" placeholder="Enter name">
+    </header>
+
+    <!-- wrap the main content in a container for easy resizing -->
+    <main class="container mt-5 mb-3">
+        <div class="row p-0">
+            <div class="col pl-0 pr-0">
+                <!-- put all the content in a card -->
+                <div class="card bg-light mb-3">
+                    <!-- Title of the webpage -->
+                    <div class="card-header bg-myblue">
+                        <h2 class="text-light">About me</h2>
                     </div>
-                    <div class="form-group">
-                        <label for="contactEmail" class="card-text">Email address</label>
-                        <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+                    <!-- Main content of the webpage -->
+                    <div class="card-body">
+                        <!-- Form to submit contact info and message -->
+                        <form>
+                            <div class="form-group">
+                                <label for="contactName" class="card-text">Name</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail" class="card-text">Email address</label>
+                                <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage" class="card-text">Message</label>
+                                <textarea class="form-control" id="contactMessage" rows="4" placeholder="I look forward to hearing from you!"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary bg-myblue">Submit</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="contactMessage" class="card-text">Message</label>
-                        <textarea class="form-control" id="contactMessage" rows="4" placeholder="I look forward to hearing from you!"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary bg-myblue">Submit</button>
-                </form>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <!-- This is the footer -->
+    <footer class="footer navbar-fixed-bottom">
         <div class="container">
-            <span class="text-muted small">Copyright &copy;</span>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col text-center text-muted small">
+                    Copyright &copy;
+                </div>
+                <div class="col"></div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

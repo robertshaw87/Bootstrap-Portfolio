@@ -7,7 +7,7 @@ This is a protoype for a responsive portfolio built using the bootstrap framewor
 
 Open up the [project link](https://robertshaw87.github.io/Bootstrap-Portfolio/) and you should be able to see the example webpage shown below:
 
-![Bootstrap Portfolio](assets/images/bootstrap-portfolio-about "Bootstrap Portfolio")
+![Bootstrap Portfolio](assets/images/bootstrap-portfolio-about.png "Bootstrap Portfolio")
 
 ### Prerequisites
 

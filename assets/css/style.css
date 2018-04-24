@@ -7,7 +7,8 @@ body {
 
 /* setup sticky footer */
 footer {
-    position: sticky;
+    clear: both;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -47,6 +48,66 @@ footer {
     opacity: .9;
 }
 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239bf' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239bf' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* flashes the background from blue to light blue and back */
+@keyframes flashBG {
+    0% {
+        background-color: #57a;
+    }
+    50%{
+        background-color: #68b;
+    }
+    100% {
+        background-color: #57a;
+    }
+}
+
+/*animation on load for brand in navbar */
+.navbar-brand {
+    animation: .4s 0s 1 flashBG;
+}
+
+/* animation on load for the header of the main content */
+.card-header {
+    animation: .4s ease-out 0s 1 slideInFromRight;
+}
+
+/* animation on load for the body of the main content */
+.card-body {
+    animation: .4s ease-out 0s 1 slideInFromLeft;
+}
+
+/* different color for hover on nav bar links */
+.nav-item:hover {
+    background-color: #bdf;
+}
+
 /* change image sizes at resolution breakpoints */
 @media screen and (max-width:992px){
     #portrait {
@@ -59,6 +120,7 @@ footer {
 }
 
 @media screen and (max-width:768px){
+
     #portrait {
         width:250px;
     }

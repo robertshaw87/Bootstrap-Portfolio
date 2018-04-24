@@ -1,6 +1,8 @@
 # Bootstrap-Portfolio
 Portfolio made with BootstrapCDN v4.1.0
 
+This is a protoype for a responsive portfolio built using the bootstrap framework. The layout automatically resizes based on the size of the screen it's being used on, providing increased readability across a variety of devices.
+
 ## Getting Started
 
 Open up the [project link](https://robertshaw87.github.io/Bootstrap-Portfolio/) and you should be able to see the example webpage.
